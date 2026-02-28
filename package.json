@@ -1,0 +1,53 @@
+{
+  "name": "solana-wallet-analyzer",
+  "version": "1.0.0",
+  "description": "A comprehensive CLI tool for analyzing Solana wallets - view holdings, transactions, NFTs, and portfolio analytics",
+  "main": "dist/index.js",
+  "bin": {
+    "solana-analyzer": "./dist/index.js",
+    "swa": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "solana",
+    "wallet",
+    "analyzer",
+    "blockchain",
+    "crypto",
+    "nft",
+    "defi",
+    "portfolio",
+    "cli"
+  ],
+  "author": "OpenClaw",
+  "license": "MIT",
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.20.1",
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.91.0",
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "commander": "^12.0.0",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.1",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ori-centric/solana-wallet-analyzer.git"
+  }
+}
